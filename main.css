@@ -1,0 +1,257 @@
+#product-overview {
+    background: linear-gradient(to top, rgba(84, 64, 44, 0.6) 10%, transparent),
+    url("images/freedom.jpg") left 10% bottom 70%/cover no-repeat border-box, #ff0000;
+    /* background-image: url("images/freedom.jpg"); */
+    /* background-image: linear-gradient(180deg, orange 30%, white 30%, green 60%); */
+    /* background-image: radial-gradient(circle farthest-side at 20% 50%, red, blue); */
+    /* background-size: cover;
+    background-position: left 10% bottom 20%;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-clip: border-box; */
+    /* margin-top: 1.8em; */
+    width: 100vw;
+    height: 33vh;
+    padding: 0.6rem;   
+}
+
+#product-overview h1 {
+    color: white;
+    font-family: 'Anton', sans-serif;
+    position: absolute;
+    top:27%;
+    padding-left: 4%;
+    font-size: 1.6rem;
+}
+
+#plans {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+
+.section-title {
+    color: #2ddf5c;
+    text-align: center;
+}
+
+.plan {
+    text-align: center;
+    background-color: #d5ffdc;
+    padding: 1rem;
+    display: block;
+    width: 100%;
+}
+
+.plan__title {
+    color: #0e4f1f;
+}
+
+.plan__price {
+    color: #a39c9c;
+}
+
+.plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.plan__feature {
+    margin: 0.5rem 0;
+}
+
+.plan--highlighted {
+    background-color: #19b84c;
+    color: white;
+}
+
+.plan--highlighted .plan__title{
+    color: white;
+}
+
+.plan--highlighted .plan__price{
+    color: #0e4f1f;
+}
+
+.plan__annotation {
+    background-color: white;
+    color: #19b84c;
+    border-radius: 8px;
+    padding: 0.3rem 0;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#key-features {
+    background-color: rgb(252, 48, 99);
+    text-align: center;
+    color: white;
+    padding: 0.6rem;
+}
+
+.section-quality {
+    padding: 1.25rem;
+    margin: 0px;
+}
+
+.key-feature__list {
+    margin: 0;
+    padding: 0;
+}
+
+div.logo-circle {
+    vertical-align: middle;
+}
+
+.key-feature__image {
+    height: 100px;
+    width: 100px;
+    border: 2px solid #424242;
+    background-color: #ffcede;
+    border-radius: 50px;
+    vertical-align: middle;
+    margin: auto;
+    padding: 1.125rem;
+    
+}
+
+.key-feature {
+    list-style: none;
+    font-family: inherit;
+    font-weight: bold;
+    display: block;
+    padding: 0px 1.56rem;
+}
+
+
+
+li.highlight {
+   text-align: center;
+   justify-content: center;
+}
+
+
+/* h1 {
+    font-family: sans-serif;
+} */
+
+.modal {
+    position: fixed;
+    opacity: 0;
+    transform: translateY(-3rem);
+    transition: opacity 0.2s ease-out, transform 500ms ease-out;
+    z-index: 200;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal__title {
+    text-align: center;
+    margin: 0 0 1rem 0;
+  }
+  
+  .modal__actions {
+    text-align: center;
+  }
+  
+  .modal__action {
+    border: 1px solid #0e4f1f;
+    background: #0e4f1f;
+    text-decoration: none;
+    color: white;
+    font: inherit;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .modal__action:hover,
+  .modal__action:active {
+    background: #2ddf5c;
+    border-color: #2ddf5c;
+  }
+  
+  .modal__action--negative {
+    background: red;
+    border-color: red;
+  }
+  
+  .modal__action--negative:hover,
+  .modal__action--negative:active {
+    background: #ff5454;
+    border-color: #ff5454;
+  }
+
+  @media (min-width: 40rem) {
+    /* #product-overview {
+        height: 40vh;
+        background-position: 50% 25%;
+    }
+    #product-overview h1 {
+        top: 32%;
+        font-size: 2.5rem;
+    } */
+
+    #plans {
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .plan {
+        width: 30%;
+        min-width: 12.5rem;
+        max-width: 22rem;
+        display: flex;
+        flex-direction: column;
+        height: 28rem;
+    }
+
+    .plan--highlighted {
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        height: 30rem;
+        z-index: 2;
+    }
+
+    .plan__annotation {
+        min-width: 10.5rem;
+    }
+
+    .plan__list {
+        text-align: center;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .key-feature {
+        max-width: 22rem;
+        min-height: 12rem;
+        width: 30%;
+    }
+
+    .key-feature__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    @media (min-width: 40rem) and (min-height: 60rem){
+        #product-overview {
+            height: 40vh;
+            background-position: 50% 25%;
+        }
+        #product-overview h1 {
+            top: 32%;
+            font-size: 2.5rem;
+        }
+    }
+}
